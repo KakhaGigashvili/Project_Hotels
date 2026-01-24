@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./rooms.style.css">
+</head>
+<body>
+<header>
+        <div class="main_header">
+            <div class="center_header">
+
+                <div class="right_header">
+                    <a href="../../index.html"><img id="default-logo" src="https://fsx1.itstep.org/api/v1/files/KI8ivg78U08nXDGDQ-O_18P1-0F49u4b" alt="Starhotel" style="height:44px; cursor: pointer;"></a>
+                </div>
+            
+                <div class="left_header">
+                    <nav>
+                        <ul>
+                            <a href="../../index.html"><li>Home</li></a> 
+                            <a href="../rooms/rooms.html"><li>Rooms</li></a>
+                            <a href="/pages/hotels/hotels.html"><li>Hotels</li></a>
+                            <a href="#"><li>Booked Rooms</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            
+            </div>
+        </div>
+    </header>
+
+<div class="main_container">
+    <div class="main_div">
+
+        <ul>
+            <li class="active">All</li>
+            <li>Single Room</li>
+            <li>Double Room</li>
+            <li>Deluxe Room</li>
+        </ul>
+
+        <div class="filter_container">
+            <div class="price_range">
+                <h4>Price Per Night</h4>
+                
+                <div class="range_slider">
+                    <div class="range_fill"></div>
+
+                    <div>
+                        <input type="range"
+                        class="min_price"
+                        value="0"
+                        min="0"
+                        max="1000" />
+                        
+                        <input type="range"
+                        class="max_price"
+                        value="1000"
+                        min="0"
+                        max="1000">
+                    </div>
+
+                    <div class="price_txt">
+                        <input id="min_value" value="0">
+                        <input id="max_value" value="1000">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="room_type">
+                <div class="info">
+                    <h4>Room type</h4> <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <select placeholder = 'Select a room'>
+                    <option selected="selected" disabled="disabled" value="Select a room">Select a room</option>
+                    <option value="Single Room">Single Room</option>
+                    <option value="Double Room">Double Room</option>
+                    <option value="Deluxe Room">Deluxe Room</option>
+                </select>
+            </div>
+
+            <div class="check_in">
+                <div class="info">
+                    <h4>Check-in</h4>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+                <div class="input_wrap">
+                    <input type="text" placeholder="Check-in">
+                    <i class="fa fa-calendar infield" style="color: #75c5cf;"></i>
+                </div>
+            </div>
+
+            <div class="check_out">
+                <div class="info">
+                    <h4>Check-out </h4> <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+                <div class="input_wrap">
+                    <input type="text" placeholder="Check-out">
+                    <i class="fa fa-calendar infield" style="color: #75c5cf;"></i>
+                </div>
+                
+            </div>
+
+            <div class="guest">
+                <div class="info">
+                    <h4>Guests</h4> <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <input type="text" placeholder="1">
+            </div>
+
+            <div class="filter_buttons">
+                <button type="submit">APPLY FILTER</button>
+                <button type="reset">RESET</button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>
+    
+
+<script src="./index.js"></script>
+</body>
+</html>

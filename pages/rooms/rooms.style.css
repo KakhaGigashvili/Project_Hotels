@@ -1,0 +1,239 @@
+.main_container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_div{
+    width: 1170px;
+}
+
+/* filter */
+
+ul{
+    display: flex;
+    margin-top: 30px;
+    padding: 0;
+}
+
+
+ul li{
+    list-style: none;
+    font-size: 13px;
+    padding: 10px 15px;
+    color: #5e5e5e;
+    margin-left: 2px;
+}
+
+ul li:hover{
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.active, .active:hover{
+    background-color: #75c5cf;
+    border-radius: 4px;
+    color: #fff;
+}
+
+
+/* filter container */
+
+.filter_container{
+    border: 1px solid #ebebeb;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+    padding: 30px 30px;
+    border-radius: 5px;
+    box-sizing: border-box !important;
+    height: 162px;
+    margin-top: 30px;
+    width: 1170px;
+    display: flex;
+}
+
+/* price */
+
+.price_range{
+    width: 25%;
+    padding: 0 10px;
+}
+
+.range_slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.range_slider div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price_txt{
+    margin-top: 15px;
+}
+
+#min_value, #max_value{
+    font-size: 13px;
+    font-weight: bold;
+    color: #0a3251;
+    padding: 0 !important;
+    width: 62px !important;
+    height: 35px !important;
+    border-radius: 4px;
+    background-color: #fff;
+    border: solid 1px #e3e3e3;
+    margin-right: 5px !important;
+    text-align: center;
+}
+
+.range_slider{
+    width: 100%;
+    position: relative;
+    margin: 15px 0 30px 0;
+}
+
+.range_fill{
+    height: 2px;
+    background-color: #75c5cf;
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    z-index: 1;
+}
+
+input[type='range']{
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    left: 0;
+
+}
+
+input[type='range']::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 2px;
+    background-color: #ebebeb;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+input[type='range']::-webkit-slider-runnable-track{
+    width: 100%;
+    height: 0;
+    background-color: #75c5cf;
+    border-radius: 3px;
+}
+
+.info h4{
+    text-align: start;
+    font-size: 13px;
+    color: #5e5e5e;
+}
+
+/* select */
+
+.room_type{
+    padding: 0 10px;
+}
+
+
+.room_type select, .room_type select option:focus{
+    padding: 6px 12px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #555;
+    height: 34px;
+    width: 100%;
+}
+
+.info{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.info i{
+    margin-left: 5px;
+    color: #9f9f9f;
+    font-size: 18px;
+}
+
+/* check */
+
+.check_in, .check_out{
+    padding: 0 10px;
+}
+
+.check_in input, .check_out input{
+    padding: 6px 12px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #555;
+    height: 34px;
+    box-sizing: border-box;
+    width: 190px;
+}
+
+.input_wrap{
+    position: relative;
+}
+
+.infield{
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+}
+
+
+.guest input{
+    width: 70px;
+    height: 34px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+/* filter button */
+
+.filter_buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    width: 15%;
+}
+
+.filter_buttons button{
+    background-color: #75c5cf;
+    border-color: #35929e;
+    text-shadow: 0 -1px 0 #50878e;
+    color: #fff;
+    margin-top: 25px;
+    font-size: 14px;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 6px 12px;
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.filter_buttons button:hover{
+    background-color: #64cedb;
+    border-color: #35929e;
+}

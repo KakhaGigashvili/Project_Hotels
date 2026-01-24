@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    src: url(https://fonts.gstatic.com/s/opensans/v44/....woff2) format('woff2');
+}
+
+.main_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main_div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hotels{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card h5{
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    padding: 10px 0 0 20px;
+    display: inline-block;
+    color: #5e5e5e;
+}
+
+.list ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+    gap: 5px;
+    list-style: none;
+}
+
+.list{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.list ul li{
+    color: #5e5e5e;
+    padding: 10px 15px;
+    font-size: 13px;
+}
+
+.active{
+    color: #fff !important;
+    background-color: #75c5cf;
+    border-radius: 4px;
+}
+

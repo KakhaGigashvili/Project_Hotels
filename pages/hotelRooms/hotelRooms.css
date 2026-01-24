@@ -1,0 +1,34 @@
+.main_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_div{
+    width: 80%;
+}
+
+ul{
+    display: flex;
+    margin-top: 30px;
+}
+
+
+ul li{
+    list-style: none;
+    font-size: 13px;
+    padding: 10px 15px;
+    color: #5e5e5e;
+    margin-left: 2px;
+}
+
+ul li:hover{
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.active, .active:hover{
+    background-color: #75c5cf;
+    border-radius: 4px;
+    color: #fff;
+}
