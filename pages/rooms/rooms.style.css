@@ -11,14 +11,14 @@
 
 /* filter */
 
-ul{
+.filter_ul{
     display: flex;
     margin-top: 30px;
     padding: 0;
 }
 
 
-ul li{
+.filter_ul li{
     list-style: none;
     font-size: 13px;
     padding: 10px 15px;
@@ -26,15 +26,15 @@ ul li{
     margin-left: 2px;
 }
 
-ul li:hover{
+.filter_ul li:hover{
     background-color: #eee;
     border-radius: 4px;
 }
 
 .active, .active:hover{
-    background-color: #75c5cf;
-    border-radius: 4px;
-    color: #fff;
+    background-color: #75c5cf !important;
+    border-radius: 4px !important;
+    color: #fff !important;
 }
 
 
@@ -58,6 +58,12 @@ ul li:hover{
 .price_range{
     width: 25%;
     padding: 0 10px;
+}
+
+.price_range h4{
+    text-align: center;
+    font-size: 13px;
+    color: #5e5e5e;
 }
 
 .range_slider{
@@ -153,7 +159,7 @@ input[type='range']::-webkit-slider-runnable-track{
     border-radius: 4px;
     color: #555;
     height: 34px;
-    width: 100%;
+    width: 165px;
 }
 
 .info{
@@ -181,7 +187,7 @@ input[type='range']::-webkit-slider-runnable-track{
     color: #555;
     height: 34px;
     box-sizing: border-box;
-    width: 190px;
+    width: 165px;
 }
 
 .input_wrap{
@@ -205,6 +211,17 @@ input[type='range']::-webkit-slider-runnable-track{
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 4px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.guest_input{
+    position: relative;
+}
+
+.guest_input i{
+    position: absolute;
+    right: 5px;
 }
 
 /* filter button */
@@ -236,4 +253,12 @@ input[type='range']::-webkit-slider-runnable-track{
 .filter_buttons button:hover{
     background-color: #64cedb;
     border-color: #35929e;
+}
+
+.get_rooms{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
 }

@@ -38,24 +38,25 @@ header{
     justify-content: center;
 }
 
-.left_header nav ul a{
+.left_header nav ul li{
     list-style: none;
     text-decoration: none;
     line-height: 20px;
 }
 
-.left_header nav ul a li{
+.left_header nav ul li a{
     color: #5e5e5e;
     padding: 32px 20px;
     font-size: 16px;
     font-weight: bold;
+    text-decoration: none;
 }
 
-.left_header nav ul a li:hover{
+.left_header nav ul li a:hover{
     color: #75c5cf;
 }
 
-.left_header nav ul a li:active{
+.left_header nav ul li a.active_header{
     color: #75c5cf;
 }
 

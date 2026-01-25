@@ -22,10 +22,10 @@
                 <div class="left_header">
                     <nav>
                         <ul>
-                            <a href="../../index.html"><li>Home</li></a> 
-                            <a href="../rooms/rooms.html"><li>Rooms</li></a>
-                            <a href="/pages/hotels/hotels.html"><li>Hotels</li></a>
-                            <a href="#"><li>Booked Rooms</li></a>
+                            <li><a href="../../index.html">Home</a></li> 
+                            <li><a href="../rooms/rooms.html">Rooms</a></li>
+                            <li><a href="/pages/hotels/hotels.html">Hotels</a></li>
+                            <li><a href="#">Booked Rooms</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -37,7 +37,7 @@
 <div class="main_container">
     <div class="main_div">
 
-        <ul>
+        <ul class="filter_ul">
             <li class="active">All</li>
             <li>Single Room</li>
             <li>Double Room</li>
@@ -111,9 +111,12 @@
 
             <div class="guest">
                 <div class="info">
-                    <h4>Guests</h4> <i class="fa-solid fa-circle-info"></i>
+                    <h4>Guests</h4>
                 </div>
-                <input type="text" placeholder="1">
+                <div class="guest_input">
+                    <i class="fa fa-user infield" style="color: #75c5cf;"></i>
+                    <input type="text" placeholder="1">
+                </div>
             </div>
 
             <div class="filter_buttons">
@@ -125,10 +128,15 @@
 
         </div>
 
+        <div class="get_rooms">
+
+        </div>
+
     </div>
 </div>
     
 
 <script src="./index.js"></script>
+<script src="../../heared.js"></script>
 </body>
 </html>
