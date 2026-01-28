@@ -25,6 +25,14 @@ header{
     background-color: #fff;
 }
 
+.hidden_menu{
+    display: none;
+}
+
+.burger{
+    display: none;
+}
+
 .center_header{
     display: flex;
     align-items: center;
@@ -73,7 +81,6 @@ header{
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0);
     width: 100%;
     height: 449px;
 }
@@ -82,43 +89,62 @@ header{
     width: 100%;
 }
 
-.hotels_title{
+.hero {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotels_title {
     position: absolute;
-    top: 30px;
-    left: 680px;
-    padding: 1px 4px 0;
+    display: flex;
+    flex-direction: column;
+    inset: 0;
+    align-items: center;
+    color: #fff;
+    left: calc(80% - 500px);
+    margin-top: 20px;
+
+    text-align: center;
 }
 
-.hotels_title h2{
+.five_stars_hotels {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
-    color: #fff;
-    font-size: 30px;
-    margin-top: 10px;
-    font-weight: 400;
+    gap: 6px;
+    flex-wrap: wrap;
 }
 
-.five_stars_hotels{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 55px;
-    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
-    font-weight: 600;
-    gap: 5px;
-}
-
-.five_stars_hotels h1{
-    color: #fff;
-    font-size: 45px;
-    font-family: Arial;
+.five_stars_hotels h1 {
+    font-size: clamp(26px, 4vw, 45px);
+    margin: 0 10px;
 }
 
 .five_stars_hotels i {
-    vertical-align: middle;
+    color: #fff;
 }
+
+.hotels_title h2 {
+    font-size: clamp(16px, 2.5vw, 30px);
+    margin: 15px 0;
+    font-weight: 400;
+}
+
+.button_div button {
+    padding: 12px 18px;
+    font-size: 14px;
+    
+}
+
+
+/* ********* */
 
 .button_div{
     display: flex;
@@ -141,6 +167,7 @@ header{
     font-weight: normal;
     border-radius: 6px;
     font-weight: bold;
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
 }
 
 .button_div button:hover{
@@ -389,4 +416,89 @@ footer{
     font-size: 12px;
     padding: 0 15px;
     padding-left: 180px;
+}
+
+
+
+/* responsive */
+
+@media screen and (max-width: 780px){
+ .main_header{
+    width: 100%;
+    justify-content: space-between;
+ }
+
+ .center_header{
+    width: 100%;
+    justify-content: space-between;
+ }
+
+ .right_header{
+    padding: 15px;
+ }
+
+ .left_header{
+    display: none;
+ }
+
+ .burger{
+    display: flex;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-right: 15px;
+ }
+
+ .burger{
+    cursor: pointer;
+ }
+
+ .hidden_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 40px;
+ }
+
+ .hidden_menu ul {
+    padding: 0;
+    width: 100%;
+ }
+
+ .hidden_menu ul li{
+    background-color: #fff;
+    list-style: none;
+    padding: 15px;
+    border-bottom: 1px solid #e1e1e1;
+    display: block;
+    width: 100vh;
+ }
+
+.hidden_menu ul li a{
+    text-decoration: none;
+    color: #5e5e5e;
+    font-weight: bold;
+ }
+
+ .response{
+    position: absolute;
+ }
+
+ .usp_cards{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .usp_card_box{
+    margin-top: 20px;
+    width: 100%;
+ }
+
+ .usp_title h1{
+    font-size: 24px;
+    width: 30%;
+    text-align: center;
+ }
+
 }

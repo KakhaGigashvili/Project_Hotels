@@ -56,14 +56,16 @@
     font-weight: 600;
 }
 
+.input_title h4 b{
+    color: #75c5cf;
+}
+
 .input_title h4 span{
     color: #979797;
     font-weight: normal;
     padding-left: 5px;
     font-size: 11px;
 }
-
-
 
 .info{
     display: flex;
@@ -126,10 +128,6 @@
 .detals p {
     margin-top: 50px;
 }
-
-
-
-
 
 .table_detals table {
     width: 100%;
@@ -200,4 +198,72 @@
 
 .overview h2{
     text-align: center;
+}
+
+@media screen and (max-width: 780px){
+    .room_detals{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img_div img{
+        padding: 0 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .main_div, .main_container{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detal_overview{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .room_inputs{
+        padding: 0 5px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .detals{
+        width: 95%;
+        box-sizing: border-box;
+    }
+    
+    .room_detals{
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .overview{
+        margin-top: 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .all_inputs{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .all_inputs .fa-calendar{
+        display: none;
+    }
+
+    .book_button{
+        padding: 0;
+    }
 }

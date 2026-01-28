@@ -1,0 +1,142 @@
+.main_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+.filter_ul{
+    display: flex;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.filter_ul li{
+    list-style: none;
+    font-size: 13px;
+    padding: 10px 15px;
+    color: #5e5e5e;
+    margin-left: 2px;
+}
+
+.filter_ul li:hover{
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.active, .active:hover{
+    background-color: #75c5cf !important;
+    border-radius: 4px !important;
+    color: #fff !important;
+}
+
+
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 70px;
+    table-layout: fixed;
+}
+
+.header_tr th {
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+tbody tr:hover {
+    background-color: #fafafa;
+}
+
+td {
+    padding: 14px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+}
+
+
+td > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+td img {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+td p:first-child {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+td p {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+}
+
+td span {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #e6f4ea;
+    color: #1e7f4f;
+}
+
+td:last-of-type:not(:has(button)) {
+    font-weight: bold;
+}
+
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #c20808;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    border-color: #ba3535;
+    text-shadow: 0 -1px 0 #760202;
+    box-sizing: border-box;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #d9363e;
+}
+
+.descr{
+    display: flex;
+    gap: 5px;
+}
+
+@media screen and (max-width: 780px){
+    tbody tr :nth-child(n+4), thead tr :nth-child(n+4)  {
+        display: none;
+        overflow: hidden;
+    }
+
+    .table_div{
+        width: 100%;
+    }
+}

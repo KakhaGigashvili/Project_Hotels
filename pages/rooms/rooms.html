@@ -17,21 +17,28 @@
             <div class="center_header">
 
                 <div class="right_header">
-                    <a href="../../index.html"><img id="default-logo" src="https://fsx1.itstep.org/api/v1/files/KI8ivg78U08nXDGDQ-O_18P1-0F49u4b" alt="Starhotel" style="height:44px; cursor: pointer;"></a>
+                   <a href="/"><img id="default-logo" src="https://fsx1.itstep.org/api/v1/files/KI8ivg78U08nXDGDQ-O_18P1-0F49u4b" alt="Starhotel" style="height:44px; cursor: pointer;"></a>
                 </div>
             
                 <div class="left_header">
                     <nav>
                         <ul>
-                            <li><a href="../../index.html">Home</a></li> 
-                            <li><a href="../rooms/rooms.html">Rooms</a></li>
-                            <li><a href="/pages/hotels/hotels.html">Hotels</a></li>
-                            <li><a href="#">Booked Rooms</a></li>
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="./rooms.html">Rooms</a></li>
+                            <li><a href="../hotels/hotels.html">Hotels</a></li>
+                            <li><a href="../bookedRooms/bookedRooms.html">Booked Rooms</a></li>
                         </ul>
                     </nav>
+
+                </div>
+
+                    <div class="burger">
+                        <i class="fa-solid fa-bars" style="color: #cccccc;"></i>
+                    </div>
+                    <div class="response">
+                    </div>
                 </div>
             
-            </div>
         </div>
     </header>
 
@@ -90,25 +97,24 @@
                 <div class="info">
                     <h4>Check-in</h4>
                     <i class="fa-solid fa-circle-info"></i>
-                    </div>
+                </div>
 
                 <div class="input_wrap">
-                    <input type="text" placeholder="Check-in">
+                    <input type="text" class="date-input checkin" placeholder="Check-in" readonly>
                     <i class="fa fa-calendar infield" style="color: #75c5cf;"></i>
                 </div>
             </div>
 
             <div class="check_out">
                 <div class="info">
-                    <h4>Check-out </h4> 
+                    <h4>Check-out</h4>
                     <i class="fa-solid fa-circle-info"></i>
                 </div>
 
                 <div class="input_wrap">
-                    <input type="text" placeholder="Check-out">
+                    <input type="text" class="date-input checkout" placeholder="Check-out" readonly>
                     <i class="fa fa-calendar infield" style="color: #75c5cf;"></i>
                 </div>
-                
             </div>
 
             <div class="guest">
@@ -134,7 +140,7 @@
                     <option value="4 adults">4 adults</option>
                     <option value="5 adults">5 adults</option>
                 </select>
-                <button>SAVE</button>
+                <button class="saveBtn">SAVE</button>
                 </div>
             </div>
 
@@ -151,6 +157,13 @@
 
     </div>
 </div>
+
+        <footer>
+            <div class="footer_text"> 
+                © 2023 IT Academy Step All; Rights Reserved
+            </div>
+
+        </footer>
     
 
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
