@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="./rooms.style.css">
 </head>
@@ -89,7 +90,7 @@
                 <div class="info">
                     <h4>Check-in</h4>
                     <i class="fa-solid fa-circle-info"></i>
-                </div>
+                    </div>
 
                 <div class="input_wrap">
                     <input type="text" placeholder="Check-in">
@@ -99,7 +100,8 @@
 
             <div class="check_out">
                 <div class="info">
-                    <h4>Check-out </h4> <i class="fa-solid fa-circle-info"></i>
+                    <h4>Check-out </h4> 
+                    <i class="fa-solid fa-circle-info"></i>
                 </div>
 
                 <div class="input_wrap">
@@ -117,6 +119,23 @@
                     <i class="fa fa-user infield" style="color: #75c5cf;"></i>
                     <input type="text" placeholder="1">
                 </div>
+
+                <div class="guest_active">
+
+                    <div class="info">
+                    <h4>Adults </h4> 
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+                <select class="guest_quantity" placeholder = '1 adult'>
+                    <option value="1 adult">1 adult</option>
+                    <option value="2 adults">2 adults</option>
+                    <option value="3 adults">3 adults</option>
+                    <option value="4 adults">4 adults</option>
+                    <option value="5 adults">5 adults</option>
+                </select>
+                <button>SAVE</button>
+                </div>
             </div>
 
             <div class="filter_buttons">
@@ -125,17 +144,16 @@
             </div>
 
 
-
         </div>
 
         <div class="get_rooms">
-
         </div>
 
     </div>
 </div>
     
 
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script src="./index.js"></script>
 <script src="../../heared.js"></script>
 </body>

@@ -1,12 +1,12 @@
 .main_container{
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .main_div{
-    width: 1170px;
+    width: 74%;
 }
 
 /* filter */
@@ -179,6 +179,13 @@ input[type='range']::-webkit-slider-runnable-track{
     padding: 0 10px;
 }
 
+.check_in input:focus, .check_out input:focus,
+.check_in input.flatpickr-input.active,
+.check_out input.flatpickr-input.active {
+    outline: none;
+    border: 1px solid #ccc !important;
+}
+
 .check_in input, .check_out input{
     padding: 6px 12px;
     border: 1px solid #cccccc;
@@ -224,6 +231,58 @@ input[type='range']::-webkit-slider-runnable-track{
     right: 5px;
 }
 
+.guest {
+    position: relative;
+}
+
+.guest:focus-within .guest_active {
+    display: flex;
+}
+
+.guest_active{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: #fff;
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.guest_quantity{
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    color: #555;
+}
+
+.guest_quantity:focus, .guest_quantity option:focus{
+    border: 1px solid #cccccc !important;
+}
+
+.guest_active button{
+    color: #75c5cf;
+    border: 1px solid #d2d2d2;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.06) 100%);
+    padding: 6px 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    height: 33px;
+}
+
+.guest_active button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: inset 5px 5px 100px 100px #FFFFFF;
+}
+
 /* filter button */
 
 .filter_buttons{
@@ -262,3 +321,45 @@ input[type='range']::-webkit-slider-runnable-track{
     gap: 20px;
     
 }
+
+/* calendar */
+
+.flatpickr-calendar *,
+.flatpickr-calendar *::before,
+.flatpickr-calendar *::after {
+    box-sizing: border-box;
+}
+
+.flatpickr-months .flatpickr-month {
+    height: 30px !important;
+}
+
+.flatpickr-day {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    margin: 2px;
+}
+
+.flatpickr-days,
+.flatpickr-weekdays {
+    width: 224px;
+}
+
+.flatpickr-weekdays {
+    height: 32px;
+}
+
+.flatpickr-weekday {
+    line-height: 32px;
+    font-size: 12px;
+}
+
+.flatpickr-calendar {
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: inherit;
+}
+

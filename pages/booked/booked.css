@@ -1,0 +1,203 @@
+.main_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_div{
+    width: 80%;
+}
+
+.room_detals{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.img_div img{
+    width: 750px;
+    height: 500px;
+    padding: 0 15px;
+}
+
+.room_inputs{
+    padding: 0 15px;
+}
+
+.all_inputs{
+    padding: 30px;
+    width: 360px;
+    box-sizing: border-box;
+}
+
+.all_inputs input{
+    height: 34px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.all_inputs h2{
+    text-align: center;
+}
+
+.input_title {
+    padding: 10px 25px;
+    margin-bottom: 12px;
+    border: 1px dashed #ebebeb;;
+}
+
+.input_title h4{
+    text-align: center;
+    color: #5e5e5e;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.input_title h4 span{
+    color: #979797;
+    font-weight: normal;
+    padding-left: 5px;
+    font-size: 11px;
+}
+
+
+
+.info{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.info i{
+    margin-left: 5px;
+    color: #9f9f9f;
+    font-size: 18px;
+}
+
+.info h4, .phone_input h4, .name_input h4{
+    color: #5e5e5e;
+    font-size: 13px;
+}
+
+.phone_input h4, .name_input h4{
+    margin-bottom: 5px;
+}
+
+
+.input_wrap{
+    position: relative;
+}
+
+.input_wrap i {
+    position: absolute;
+    left: 275px;
+    top: 12px;
+}
+
+.check_in, .check_out, .phone_input, .name_input{
+    margin-bottom: 15px;
+}
+
+.book_button button{
+    background-color: #428bca;
+    border: 1px solid #357ebd;
+    width: 100%;
+    color: #fff;
+    padding: 6px 12px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.detal_overview{
+    margin-top: 50px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detals{
+    width: 58%;
+}
+
+.detals p {
+    margin-top: 50px;
+}
+
+
+
+
+
+.table_detals table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table_detals table tbody tr td {
+    border-top: 1px solid #ebebeb;
+    padding: 15px 10px;
+    width: 33.33%; 
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.table_detals table tbody tr:first-child td {
+    border-top: none; 
+}
+
+.table_detals h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.table_detals p {
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #5e5e5e;
+}
+
+.table_detals{
+    margin-top: 50px;
+}
+
+.detals h2{
+    text-align: center;
+}
+
+.description ul {
+    display: flex;
+    color: #555555;
+    cursor: default;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0;
+    gap: 10px;
+}
+
+.description ul li{
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.description {
+    margin-top: 50px;
+}
+
+.description p {
+    padding: 20px;
+    color: #333;
+    font-size: 13px;
+}
+
+.overview{
+    width: 40%;
+}
+
+.overview h2{
+    text-align: center;
+}

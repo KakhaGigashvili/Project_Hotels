@@ -206,6 +206,11 @@ header{
     transition: transform 0.5s ease;
 }
 
+.card button a {
+    color: #fff;
+    text-decoration: none;
+}
+
 
 .card_body{
     display: flex;

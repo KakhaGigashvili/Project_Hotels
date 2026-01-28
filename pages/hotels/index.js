@@ -48,7 +48,7 @@ hotels.addEventListener('click', (e) => {
     if (e.target.classList.contains('changePage')) {
         const hotelId = e.target.dataset.id
 
-        window.location.href = `../hotelRooms/hotelRooms.html?id=${hotelId}`
+        window.location.href = `../rooms/rooms.html?id=${hotelId}`
     }
 })
 

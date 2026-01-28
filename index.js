@@ -39,7 +39,7 @@ const generateRooms = () =>{
                             <p>a night</p>
                         </div>
                     </div>
-                    <button>BOOK NOW</button>
+                    <button><a href="/pages/booked/booked.html">BOOK NOW</a></button>
                     <div class="hover_div"></div>
                 </div>
         `
