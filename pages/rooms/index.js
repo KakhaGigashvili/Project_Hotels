@@ -41,11 +41,20 @@ const getAllRooms = () => {
     fetch(`${basedApi}/Rooms/GetAll`)
         .then(res => res.json())
         .then(data => {
-            roomsArr = data
+            const params = new URLSearchParams(window.location.search)
+            const roomIdFromUrl = Number(params.get('id'))
+
+            if (roomIdFromUrl) {
+                roomsArr = data.filter(room => room.hotelId === roomIdFromUrl)
+            } else {
+                roomsArr = data
+            }
+
             generateRooms()
         })
         .catch(console.error)
 }
+
 
 const generateRooms = () => {
     let html = ''
@@ -63,7 +72,7 @@ const generateRooms = () => {
                     <p>a night</p>
                 </div>
             </div>
-            <button><a href="/pages/booked/booked.html">BOOK NOW</a></button>
+            <button><a href="/pages/booked/booked.html?roomId=${sixRooms[i].id}">BOOK NOW</a></button>
         </div>
         `
     })
