@@ -384,6 +384,16 @@ input[type='range']::-webkit-slider-runnable-track{
     justify-content: center;
 }
 
+.input_wrap{
+    position: relative;
+}
+
+.input_wrap i {
+    position: absolute;
+    left: 275px;
+    top: 12px;
+}
+
 .flatpickr-day:hover{
     border: 1px solid #75c5cf;
 }
@@ -398,10 +408,6 @@ input[type='range']::-webkit-slider-runnable-track{
 
     .filter_container input{
         width: 100%;
-    }
-
-    .check_in, .check_out, .room_type{
-        padding: 0;
     }
 
     .room_type select{
@@ -427,5 +433,36 @@ input[type='range']::-webkit-slider-runnable-track{
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
+        width: 100%;
     }
+
+      .hotels{
+        width: 100%;
+    }
+
+    .card{
+        height: 100% !important;
+        width: 100%;
+    }
+
+    .card:hover .card_body, .card:hover button{
+        transform: translateY(0px);
+    }
+
+    .card:hover img{
+        transform: translateY(0px);
+    }
+
+    .input_wrap i{
+        display: none;
+    }
+
+    .filter_ul li{
+        padding: 5px;
+    }
+
+    .check_in, .check_out, .room_type{
+        padding: 0;
+    }
+
 }

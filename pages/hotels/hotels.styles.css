@@ -68,3 +68,22 @@ body{
     border-radius: 4px;
 }
 
+@media screen and (max-width: 400px){
+
+    .hotels{
+        width: 100%;
+    }
+
+    .card{
+        height: 100% !important;
+    }
+
+     .card:hover .card_body, .card:hover button{
+    transform: translateY(0px);
+}
+
+.card:hover img{
+    transform: translateY(0px);
+}
+}
+

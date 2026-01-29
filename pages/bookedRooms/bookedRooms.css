@@ -139,4 +139,12 @@ button:hover {
     .table_div{
         width: 100%;
     }
+
+}
+
+@media screen and (max-width: 350px){
+    .descr{
+        display: flex;
+        flex-direction: column;
+    }
 }

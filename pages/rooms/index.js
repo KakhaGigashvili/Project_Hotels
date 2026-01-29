@@ -72,7 +72,7 @@ const generateRooms = () => {
                     <p>a night</p>
                 </div>
             </div>
-            <button>BOOK NOW</a></button>
+            <button><a href="/pages/booked/booked.html?roomId=${room.id}">BOOK NOW</a></button>
         </div>
         `
     })

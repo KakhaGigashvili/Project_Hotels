@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="./booked.css">\
+    <link rel="stylesheet" href="./booked.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
 <header>
@@ -65,7 +66,7 @@
                 </div>
 
                 <div class="input_wrap">
-                    <input type="text" placeholder="Check-in">
+                    <input type="text" class="date-input checkin" placeholder="Check-in" readonly>
                     <i class="fa fa-calendar infield" style="color: #75c5cf;"></i>
                 </div>
             </div>
@@ -73,15 +74,14 @@
             
             <div class="check_out">
                 <div class="info">
-                    <h4>Check-out </h4> 
+                    <h4>Check-out</h4>
                     <i class="fa-solid fa-circle-info"></i>
                 </div>
-                
+
                 <div class="input_wrap">
-                    <input type="text" placeholder="Check-out">
+                    <input type="text" class="date-input checkout" placeholder="Check-out" readonly>
                     <i class="fa fa-calendar infield" style="color: #75c5cf;"></i>
                 </div>
-                
             </div>
             
             <div class="name_input">
@@ -176,7 +176,8 @@
             </div>
 
         </footer>
-    
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
         <script src="./index.js"></script>
+        <script src="../../heared.js"></script>
 </body>
 </html>
