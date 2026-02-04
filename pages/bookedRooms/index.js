@@ -64,7 +64,7 @@ const cancelBooking = (id) => {
     fetch(`${basedApi}/Booking/${id}`, { method: 'DELETE' })
         .then(res => {
             if (!res.ok) throw new Error('Failed to delete booking');
-            getBookedRooms(); // refresh table immediately
+            getBookedRooms(); 
         })
         .catch(err => console.error(err));
 };

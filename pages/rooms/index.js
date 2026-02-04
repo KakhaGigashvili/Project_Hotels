@@ -14,7 +14,6 @@ const maxPrice = price_range[1]
 const minValueDisplay = document.querySelector('#min_value')
 const maxValueDisplay = document.querySelector('#max_value')
 
-// NEW: room type mapping
 const ROOM_TYPE_MAP = {
     'Single Room': 1,
     'Double Room': 2,
@@ -129,7 +128,6 @@ submitButtons.addEventListener('click', e => {
         checkOut: check_out.value ? new Date(check_out.value).toISOString() : null
     }
 
-    //  NEW: room type only if selected
     if (ROOM_TYPE_MAP[room_type.value]) {
         bodyData.roomTypeId = ROOM_TYPE_MAP[room_type.value]
     }

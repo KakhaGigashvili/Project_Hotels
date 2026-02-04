@@ -15,7 +15,6 @@ const tableDiv = document.querySelector('.table_detals')
 let roomPrice = 0
 let roomsMap = {}
 
-// --- Load all rooms first ---
 const getAllRooms = () => {
     return fetch(`${basedApi}/Rooms/GetAll`)
         .then(res => {
@@ -33,7 +32,6 @@ const getAllRooms = () => {
             roomImage.src = room.images?.[0]?.source || ''
             roomTitle.innerHTML = `${room.name} <b>€ ${roomPrice}</b> <span>a night</span>`
             
-            // ✅ ეს ხაზი დაემატა - აბრუნებს roomsMap-ს
             return roomsMap
         })
         .catch(err => {
@@ -196,7 +194,6 @@ tableDiv.addEventListener('click', (e) => {
     }
 })
 
-// ✅ ეს ნაწილი შეიცვალა - ელოდება სანამ rooms ჩაიტვირთება
 getAllRooms().then(() => {
     getBookedRooms()
 })
